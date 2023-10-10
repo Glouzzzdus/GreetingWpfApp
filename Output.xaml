@@ -1,0 +1,27 @@
+﻿<Window x:Class="GreetingWpfApp.Output"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreetingWpfApp"
+        mc:Ignorable="d"
+        Title="Output" Height="300" Width="400"
+        KeyDown="OutputWindow_KeyDown">
+    <Grid>
+        <TextBlock Name="OutputTextBlock"
+                   TextWrapping="Wrap"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   TextAlignment="Center"
+                   Margin="0,40,0,0"
+                   FontSize="25" 
+                   Foreground="Black" />
+        <Button Content="OK"
+                Width="100"
+                Height="30" 
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Click="Submit_Click"
+                Margin="0,170,0,0"/>
+    </Grid>
+</Window>
